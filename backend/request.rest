@@ -1,0 +1,32 @@
+GET http://localhost:5000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjMsIm5hbWUiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW5AYWRtaW4uY29tIiwiaWF0IjoxNjY5OTc4MjMyLCJleHAiOjE2Njk5NzgyNDd9.Ct1XPHUqxCYpH0fTtnXfe1xjjrbGSo8gO02VqkOQstA
+
+
+###
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name":"syahril",
+    "email":"syahril",
+    "password":"password",
+    "confPassword":"password"
+}
+
+
+### LOGIN
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email":"admin@admin.com",
+    "password":"password"
+}
+
+
+### refresh token
+get http://localhost:5000/token
+
+
+### LOGOUT
+DELETE http://localhost:5000/logout
